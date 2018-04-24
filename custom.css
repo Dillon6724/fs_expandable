@@ -1,0 +1,126 @@
+/* =============== *
+  * VIDEO CONTAINER *
+  * =============== */
+#content-container {
+    position: relative;
+    width: 826px;
+    height: 607px;
+    background: url('center_fullscreen.png');
+    /*background-color: rgba(0, 0, 0, 0.85);*/
+    z-index: 200;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#selections {
+    position: relative;
+    width: 826px;
+    height: 32px;
+    text-align: right;
+    z-index: 200;
+    margin: 90px auto 10px;
+}
+.view {
+      font-size: 28px;
+      margin: 17px;
+      color: #EEC52C;
+      opacity: 0.85;
+      cursor: pointer;
+}
+.selected {
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+}
+#trailer-container {
+    margin-left: 72px;
+    margin-top: 35px;
+    z-index: 300;
+}
+/*video {
+    background-color: black;
+}*/
+#gallery {
+    display: none;
+    width: 826px;
+    height: 410px;
+    margin-left: 13px;
+    margin-top: 39px;
+}
+#synopsis {
+  text-align: left;
+  display: none;
+  font-size: 16px;
+  padding: 34px 10px 0px 93px;
+}
+#synopsis p {
+    line-height: 1.5;
+}
+#ct-text {
+    z-index: 200;
+	cursor: pointer;
+}
+
+.fuel-di-vibes {
+  position: absolute;
+  top: 16px;
+  left: 34px;
+}
+
+.logo-stripes {
+  position: absolute;
+  left: 550px;
+}
+
+.expand-click {
+  position: absolute;
+  left: 809px;
+  top: 28px;
+}
+
+#trailer {
+  width: 750px;
+}
+@media (max-height: 1085px) {
+  #lgo{
+    /*background-image:url('dudes.png');
+    background-repeat: no-repeat;*/
+    width:720px;
+    height:234px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-height: 950px) {
+  #lgo {
+    height:50px;
+  }
+}
+
+.pswp {
+  position: relative;
+}
+
+/*@-webkit-keyframes colAnimate {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -424px;}
+}
+@-moz-keyframes colAnimate {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -424px;}
+}
+@-o-keyframes colAnimate {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -424px;}
+}*/
+
+/* COMMENT OUT TO REMOVE ANIMATION FORM COLLAPSED CREATIVE*/
+/*@keyframes colAnimate {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -424px;}
+}*/
+
+#collapse_content_dc {
+  -webkit-animation: background-transition 7s ease-in-out forwards;
+  animation: background-transition 7s ease-in-out forwards;
+}
+/* END COLLAPSED ANIMATION */

@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Studio Enabler Required -->
+		<!--<script type="text/javascript" async="" src="./23507593_20140724084943504_DCRM_HTML5_inPage_320x50_ClickToFullScreen_files/ga.js"></script>-->
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script>
+			(Enabler.isInitialized())? enablerInitHandler(): Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitHandler);
+			function enablerInitHandler(){
+				console.log("[enablerInitHandler]");
+				(Enabler.isVisible)? adVisibilityHandler(): Enabler.addEventListener(studio.events.StudioEvent.VISIBLE,adVisibilityHandler);
+
+				//alert("updated_5");
+			}
+		</script>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="custom.css">
+		<link rel="stylesheet" type="text/css" href="gallery.css">
+	</head>
+	<body>
+		<!-- ####################
+		### COLLAPSED CONTENT ###
+		#####################-->
+		<div id="collapse_container_dc">
+			<div id="collapse_content_dc">
+				<input id="cta_dc" type="button" value="CLICK TO FULLSCREEN" style="font-size: 10px;">
+				<!-- <img id="logos" src="970x90_logos.png"> -->
+				<img src="FUEL-DI-VIBES.png" class="fuel-di-vibes" />
+				<img src="logo-stripes.png" class="logo-stripes"/>
+				<img src="expand.png" class="expand-click"/>
+				<div id="background_exit_dc"></div>
+			</div>
+		</div>
+
+		<!-- ####################
+		### EXPANDED CONTENT ###
+		#####################-->
+		<div id="expand_container_dc">
+			<!--<div class=wrap>-->
+				<div id="expand_content_dc">
+					<!-- LOGO -->
+				   	<div id="lgo" onclick="clickThrough()"></div>
+
+				   	<!-- RETURN TO SITE BOTTOM BAR -->
+					<input id="cta_col" type="button" value="◃ RETURN TO SITE">
+
+					<!-- ####################
+					### CONTENT CONTAINER ###
+					#####################-->
+					<div id="content-container">
+
+						<!-- SELECTION MENU -->
+						<div id="selections">
+							<span id="click-trailer" class="selected view" onclick="clickTrailer()">Video</span>
+							<span id="click-synopsis" class="view" onclick="clickSynopsis()">About</span>
+							<span id="click-gallery" class="view" onclick="clickGallery()">Photo Gallery</span>
+						</div>
+
+						<!-- ###################
+						### TRAILER CONTAINER ###
+						####################-->
+						<div id="trailer-container">
+							<video id="trailer" width="800" height="450" controls>
+								<source type="video/mp4" src="video.mp4" />
+								<!-- <source type="video/mp4" src="//gcdn.2mdn.net/videoplayback/id/cc3c8f3c941155ad/itag/15/source/doubleclick/ratebypass/yes/mime/video%2Fmp4/acao/yes/ip/0.0.0.0/ipbits/0/expire/3609157914/sparams/id,itag,source,ratebypass,mime,acao,ip,ipbits,expire/signature/969E64C703C728E5D34B604533AEDAEDB4CABD6A.B2519895D16643D5551496C83F442C0C73BC8160/key/ck2/file/file.mp4" /> -->
+								<!-- <source type="video/ogv" src="video.ogv" /> -->
+							</video>
+						</div>
+
+						<!-- ####################
+						### SYNOPSIS CONTAINER ###
+						#####################-->
+						<div id="synopsis">
+							<p>
+								HOT97 KICKS OFF LABOR DAY WEEKEND WITH THE BIGGEST REGGAE AND SOCA PARTY OF THE SUMMER… ‘ON DA REGGAE AND SOCA TIP 2016’. ON SEPTEMBER 4TH AT GOVERNORS ISLAND 5,000 FANS WILL CONVERGE TO SEE SOME OF TODAYS BIGGEST REGGAE, SOCA AND DANCE HALL.</br></br>
+								HOSTED BY BOBBY KONDERS AND JABBA, A SYMBOL OF THE NYC CARIBBEAN CULTURE, WHO KEEP THE CROWD ENGAGED FOR NEARLY 5 HOURS. THEY TAKE THE SAME ENERGY FROM THEIR SUNDAY NIGHT SHOW ON HOT 97 AND BRING IT TO THE STAGE AT GOVERNOR’S ISLAND.</br></br>
+								THE WEST INDIAN COMMUNITY IS A STAPLE TO THE CULTURE OF NEW YORK CITY AND ON DA REGGAE AND SOCA TIP IS A TESTAMENT TO IT’S RICH HISTORY. OVER THE PAST 15 YEARS ‘ODRST’ HAS SEEN ARTISTS SUCH: Barrington Levy, SHABBA RANKS, BEENIE MAN,MAXI PRIEST, NE-YO,NICK IMINAJ,SHAGGY, DAMIAN & STEPHEN MARLEY AND CHRIS BROWN, AND ELEPHANT MAN.</br></br>
+								NUTRAMENT RECOGNIZES THE LOYALTY AND INFLUENCE THAT THIS COMMUNITY HAS IN THE TRI-STATE AREA. NOT ONLY HAVE THE EMBRACED THIS EVENT BUT PROVIDED DYNAMIC AND INTERACTIVE ACTIVATIONS EVERY YEAR. AS THE PRESENTING SPONSOR THEY ARE PROUD TO PRESENT: ON DA REGGAE AND SOCA TIP 2016
+							</p>
+						</div>
+
+						<!-- ####################
+						### GALLERY CONTAINER ###
+						#####################-->
+						<div id="gallery">
+							<ul class="slides">
+							    <input type="radio" name="radio-btn" id="img-1" checked="checked" />
+							    <li class="slide-container">
+							        <div class="slide">
+							            <img src="1.jpg" />
+							        </div>
+							        <div class="nav">
+							            <label for="img-5" class="prev">‹</label>
+							            <label for="img-2" class="next">›</label>
+							        </div>
+							    </li>
+
+							    <input type="radio" name="radio-btn" id="img-2" />
+							    <li class="slide-container">
+							        <div class="slide">
+							          <img src="2.jpg" />
+							        </div>
+							        <div class="nav">
+							            <label for="img-1" class="prev">‹</label>
+							            <label for="img-3" class="next">›</label>
+							        </div>
+							    </li>
+
+							    <input type="radio" name="radio-btn" id="img-3" />
+							    <li class="slide-container">
+							        <div class="slide">
+							          <img src="3.jpg" />
+							        </div>
+							        <div class="nav">
+							            <label for="img-2" class="prev">‹</label>
+							            <label for="img-4" class="next">›</label>
+							        </div>
+							    </li>
+
+							    <input type="radio" name="radio-btn" id="img-4" />
+							    <li class="slide-container">
+							        <div class="slide">
+							          <img src="4.jpg" />
+							        </div>
+							        <div class="nav">
+							            <label for="img-3" class="prev">‹</label>
+							            <label for="img-5" class="next">›</label>
+							        </div>
+							    </li>
+
+							    <input type="radio" name="radio-btn" id="img-5" />
+							    <li class="slide-container">
+							        <div class="slide">
+							          <img src="5.jpg" />
+							        </div>
+							        <div class="nav">
+							            <label for="img-4" class="prev">‹</label>
+							            <label for="img-1" class="next">›</label>
+							        </div>
+							    </li>
+
+							    <li class="nav-dots">
+							      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+							      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+							      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+							      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+							      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+							    </li>
+							</ul>
+
+
+						</div>
+
+					</div>
+
+					<div id="expand_background_dc" onclick="clickThrough()"></div>
+					<div id="background_exit_collapse"></div>
+
+				</div>
+				<div id="expand_blocker_dc"></div>
+			<!--</div>-->
+		</div>
+		<script>
+		        var clicktrailer;
+		        var clicksynopsis;
+		        var clickgallery;
+		        var trailer;
+		        var synopsis;
+		        var gallery;
+
+		        function clickVars(){
+					console.log("[clickVars]");
+					clicktrailer = document.getElementById('click-trailer');
+					clicksynopsis = document.getElementById('click-synopsis');
+					clickgallery  = document.getElementById('click-gallery');
+					trailer = document.getElementById('trailer-container');
+					synopsis = document.getElementById('synopsis');
+					gallery = document.getElementById('gallery');
+		        }
+
+		        function clickTrailer () {
+					Enabler.counter("Trailer click");
+					Enabler.startTimer("Trailer timer");
+					Enabler.stopTimer("Synopsis timer");
+					Enabler.stopTimer("Gallery timer");
+		            document.getElementById('synopsis').style.display = 'none';
+		            document.getElementById('gallery').style.display = 'none';
+		            document.getElementById('trailer-container').style.display = 'block';
+		            document.getElementById('click-trailer').setAttribute('class', 'selected view');
+		            document.getElementById('click-synopsis').setAttribute('class', 'view');
+		            document.getElementById('click-gallery').setAttribute('class', 'view');
+		            document.getElementById('content-container').style.overflow = 'hidden';
+		            document.getElementById('trailer').addEventListener('loadedmetadata', function() {
+						this.currentTime = 0;
+					}, false);
+		            document.getElementById('trailer').load();
+		            document.getElementById('trailer').play();
+		        }
+
+		        function clickSynopsis () {
+					Enabler.counter("Synopsis click");
+					Enabler.startTimer("Synopsis timer");
+					Enabler.stopTimer("Trailer timer");
+					Enabler.stopTimer("Gallery timer");
+		            document.getElementById('trailer-container').style.display = 'none';
+		            document.getElementById('gallery').style.display = 'none';
+		            document.getElementById('synopsis').style.display = 'block';
+		            document.getElementById('click-synopsis').setAttribute('class', 'selected view');
+		            document.getElementById('click-trailer').setAttribute('class', 'view');
+		            document.getElementById('click-gallery').setAttribute('class', 'view');
+		            document.getElementById('content-container').style.overflow = 'scroll';
+		            document.getElementById('trailer').addEventListener('loadedmetadata', function() {
+						this.currentTime = 0;
+					}, false);
+		            document.getElementById('trailer').pause();
+		        }
+
+		        function clickGallery () {
+					Enabler.counter("Gallery click");
+					Enabler.startTimer("Gallery timer");
+					Enabler.stopTimer("Trailer timer");
+					Enabler.stopTimer("Synopsis timer");
+		            document.getElementById('trailer-container').style.display = 'none';
+		            document.getElementById('synopsis').style.display = 'none';
+		            document.getElementById('gallery').style.display = 'block';
+		            document.getElementById('click-gallery').setAttribute('class', 'selected view');
+		            document.getElementById('click-trailer').setAttribute('class', 'view');
+		            document.getElementById('click-synopsis').setAttribute('class', 'view');
+		            document.getElementById('content-container').style.overflow = 'hidden';
+		            document.getElementById('trailer').addEventListener('loadedmetadata', function() {
+						this.currentTime = 0;
+					}, false);
+		            document.getElementById('trailer').pause();
+		        }
+
+		        function clickThrough () {
+					Enabler.stopTimer("Trailer timer");
+					Enabler.stopTimer("Synopsis timer");
+					Enabler.stopTimer("Gallery timer");
+		        	Enabler.exit('click_through', 'http://www.google.com/');
+
+					queryFSCollapse()
+
+		        	console.log("[Click through complete!]")
+		        }
+
+
+
+		</script>
+
+	</body>
+</html>
